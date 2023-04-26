@@ -301,7 +301,7 @@ public class Formulario extends javax.swing.JFrame {
         }
     }
     void consultar(){
-        String sql = "select * from notas";
+        String sql = "select * from notas order by id desc";
         try{
             conect = con1.getConnection();
             st = conect.createStatement();
